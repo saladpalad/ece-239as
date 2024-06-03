@@ -1,0 +1,8 @@
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:157: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  states = torch.tensor(states).to(self.device).float()
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:158: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  actions = torch.tensor(actions).to(self.device).long()
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:159: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = torch.tensor(rewards).to(self.device).float()
+saving to ./runs/DQN/run19
+hi

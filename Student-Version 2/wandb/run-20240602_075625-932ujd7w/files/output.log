@@ -1,0 +1,44 @@
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:157: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  states = torch.tensor(states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:158: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  actions = torch.tensor(actions, device=self.device, dtype=torch.int64).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:159: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = torch.tensor(rewards, device=self.device, dtype=torch.float32).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:160: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  next_states = torch.tensor(next_states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:161: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  dones = torch.tensor(dones, device=self.device, dtype=torch.float32).unsqueeze(1)
+Episode: 1: Time: 23.49230694770813 Total Reward: -47.55474452554776 Avg_Loss: 0.5249725018099994
+saving to ./runs/DoubleDQN_HardUpdates/run2
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:317: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  states = torch.tensor(states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:318: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  actions = torch.tensor(actions, device=self.device, dtype=torch.int64).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:319: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = torch.tensor(rewards, device=self.device, dtype=torch.float32).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:320: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  next_states = torch.tensor(next_states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:321: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  dones = torch.tensor(dones, device=self.device, dtype=torch.float32).unsqueeze(1)
+/usr/local/lib/python3.10/dist-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:744: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Episode: 1: Time: 14.28746747970581 Total Reward: -21.0563380281689 Avg_Loss: 0.655345814077148
+Episode: 2: Time: 13.215897560119629 Total Reward: -26.29770992366428 Avg_Loss: 0.8390104325816912
+Episode: 3: Time: 13.023761749267578 Total Reward: -52.03125000000034 Avg_Loss: 0.7950283188153716
+Episode: 4: Time: 13.039094924926758 Total Reward: -51.521739130435506 Avg_Loss: 0.7193411295497868
+Episode: 5: Time: 13.363576650619507 Total Reward: 52.72727272727378 Avg_Loss: 0.8268074159424345
+Episode: 6: Time: 13.29269528388977 Total Reward: -39.44444444444515 Avg_Loss: 0.8186847926626185
+Episode: 7: Time: 13.586994171142578 Total Reward: 20.52346570396992 Avg_Loss: 0.8354671212742809
+Episode: 8: Time: 14.098197221755981 Total Reward: -19.471299093656288 Avg_Loss: 0.7903920000559893
+Episode: 9: Time: 14.00090765953064 Total Reward: -43.805460750853726 Avg_Loss: 0.7777767687597695
+Episode: 10: Time: 14.614734172821045 Total Reward: -13.644067796611004 Avg_Loss: 0.7380857847850112
+Episode: 11: Time: 15.51474928855896 Total Reward: -43.553054662379864 Avg_Loss: 0.7233784964323795
+Episode: 12: Time: 14.3484468460083 Total Reward: -21.315789473684934 Avg_Loss: 0.6584667156786979
+Episode: 13: Time: 16.69517230987549 Total Reward: -23.813559322034653 Avg_Loss: 0.646836297414383
+Episode: 14: Time: 15.848658084869385 Total Reward: -42.04049844236832 Avg_Loss: 0.6198763070361955
+Episode: 15: Time: 14.780477285385132 Total Reward: -49.69255663430491 Avg_Loss: 0.5581819212079799
+Episode: 16: Time: 13.725998401641846 Total Reward: -63.309859154930194 Avg_Loss: 0.5119954841367963
+Episode: 17: Time: 14.294617891311646 Total Reward: -0.4054054054061491 Avg_Loss: 0.4832511323997203
+Episode: 18: Time: 13.620869159698486 Total Reward: -41.8085106382986 Avg_Loss: 0.5434231690029386

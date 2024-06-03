@@ -1,0 +1,63 @@
+2024-05-31 01:00:15,144 INFO    MainThread:933 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-31 01:00:15,146 INFO    MainThread:933 [wandb_setup.py:_flush():76] Configure stats pid to 933
+2024-05-31 01:00:15,147 INFO    MainThread:933 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-05-31 01:00:15,147 INFO    MainThread:933 [wandb_setup.py:_flush():76] Loading settings from /content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/wandb/settings
+2024-05-31 01:00:15,147 INFO    MainThread:933 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-31 01:00:15,148 INFO    MainThread:933 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-31 01:00:15,148 INFO    MainThread:933 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-31 01:00:15,148 INFO    MainThread:933 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-05-31 01:00:15,148 INFO    MainThread:933 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-31 01:00:15,150 INFO    MainThread:933 [wandb_init.py:_log_setup():520] Logging user logs to /content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/wandb/run-20240531_010015-14py3dg3/logs/debug.log
+2024-05-31 01:00:15,152 INFO    MainThread:933 [wandb_init.py:_log_setup():521] Logging internal logs to /content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/wandb/run-20240531_010015-14py3dg3/logs/debug-internal.log
+2024-05-31 01:00:15,152 INFO    MainThread:933 [wandb_init.py:_jupyter_setup():466] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x79e37d9ed1e0>
+2024-05-31 01:00:15,153 INFO    MainThread:933 [wandb_init.py:init():560] calling init triggers
+2024-05-31 01:00:15,153 INFO    MainThread:933 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-05-31 01:00:15,153 INFO    MainThread:933 [wandb_init.py:init():610] starting backend
+2024-05-31 01:00:15,154 INFO    MainThread:933 [wandb_init.py:init():614] setting up manager
+2024-05-31 01:00:15,161 INFO    MainThread:933 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-05-31 01:00:15,163 INFO    MainThread:933 [wandb_init.py:init():622] backend started and connected
+2024-05-31 01:00:15,247 INFO    MainThread:933 [wandb_run.py:_label_probe_notebook():1328] probe notebook
+2024-05-31 01:00:20,273 INFO    MainThread:933 [wandb_run.py:_label_probe_notebook():1338] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-05-31 01:00:20,274 INFO    MainThread:933 [wandb_init.py:init():711] updated telemetry
+2024-05-31 01:00:20,285 INFO    MainThread:933 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-05-31 01:00:20,688 INFO    MainThread:933 [wandb_run.py:_on_init():2396] communicating current version
+2024-05-31 01:00:20,849 INFO    MainThread:933 [wandb_run.py:_on_init():2405] got version response 
+2024-05-31 01:00:20,850 INFO    MainThread:933 [wandb_init.py:init():795] starting run threads in backend
+2024-05-31 01:00:21,495 INFO    MainThread:933 [wandb_run.py:_console_start():2374] atexit reg
+2024-05-31 01:00:21,496 INFO    MainThread:933 [wandb_run.py:_redirect():2229] redirect: wrap_raw
+2024-05-31 01:00:21,497 INFO    MainThread:933 [wandb_run.py:_redirect():2294] Wrapping output streams.
+2024-05-31 01:00:21,497 INFO    MainThread:933 [wandb_run.py:_redirect():2319] Redirects installed.
+2024-05-31 01:00:21,504 INFO    MainThread:933 [wandb_init.py:init():838] run started, returning control to user process
+2024-05-31 01:00:21,505 INFO    MainThread:933 [wandb_run.py:_config_callback():1376] config_cb None None {'lr': 0.00025, 'gamma': 0.95, 'buffer_size': 100000, 'batch_size': 32, 'loss_fn': 'mse_loss', 'device': 'cpu', 'seed': 42, 'save_path': './runs/DQN/run4'}
+2024-05-31 01:00:30,415 INFO    MainThread:933 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-31 01:00:30,419 INFO    MainThread:933 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-31 01:00:31,689 INFO    MainThread:933 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-31 01:00:31,859 INFO    MainThread:933 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-31 01:00:31,860 INFO    MainThread:933 [wandb_init.py:_pause_backend():431] pausing backend
+2024-05-31 01:00:39,675 INFO    MainThread:933 [wandb_init.py:_resume_backend():436] resuming backend
+2024-05-31 01:00:39,827 INFO    MainThread:933 [wandb_setup.py:_flush():76] Current SDK version is 0.17.0
+2024-05-31 01:00:39,829 INFO    MainThread:933 [wandb_setup.py:_flush():76] Configure stats pid to 933
+2024-05-31 01:00:39,830 INFO    MainThread:933 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2024-05-31 01:00:39,830 INFO    MainThread:933 [wandb_setup.py:_flush():76] Loading settings from /content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/wandb/settings
+2024-05-31 01:00:39,831 INFO    MainThread:933 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-05-31 01:00:39,831 INFO    MainThread:933 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-05-31 01:00:39,831 INFO    MainThread:933 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-31 01:00:39,832 INFO    MainThread:933 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-05-31 01:00:39,832 INFO    MainThread:933 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-05-31 01:00:39,833 INFO    MainThread:933 [wandb_init.py:_log_setup():520] Logging user logs to /content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/wandb/run-20240531_010039-s5a9eejf/logs/debug.log
+2024-05-31 01:00:39,834 INFO    MainThread:933 [wandb_init.py:_log_setup():521] Logging internal logs to /content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/wandb/run-20240531_010039-s5a9eejf/logs/debug-internal.log
+2024-05-31 01:00:39,834 INFO    MainThread:933 [wandb_init.py:init():560] calling init triggers
+2024-05-31 01:00:39,835 INFO    MainThread:933 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-05-31 01:00:39,835 INFO    MainThread:933 [wandb_init.py:init():585] re-initializing run, found existing run on stack: 14py3dg3
+2024-05-31 01:00:39,840 INFO    MainThread:933 [wandb_run.py:_finish():2103] finishing run art-aisafety/racing-car-dqn/14py3dg3
+2024-05-31 01:00:39,840 INFO    MainThread:933 [jupyter.py:save_history():445] not saving jupyter history
+2024-05-31 01:00:39,841 INFO    MainThread:933 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2024-05-31 01:00:39,841 INFO    MainThread:933 [wandb_init.py:_jupyter_teardown():448] cleaning up jupyter logic
+2024-05-31 01:00:39,841 INFO    MainThread:933 [wandb_run.py:_atexit_cleanup():2343] got exitcode: 0
+2024-05-31 01:00:39,842 INFO    MainThread:933 [wandb_run.py:_restore():2326] restore
+2024-05-31 01:00:39,843 INFO    MainThread:933 [wandb_run.py:_restore():2332] restore done
+2024-05-31 01:00:44,031 INFO    MainThread:933 [wandb_run.py:_footer_history_summary_info():3994] rendering history
+2024-05-31 01:00:44,031 INFO    MainThread:933 [wandb_run.py:_footer_history_summary_info():4026] rendering summary
+2024-05-31 01:00:44,046 INFO    MainThread:933 [wandb_run.py:_footer_sync_info():3953] logging synced files

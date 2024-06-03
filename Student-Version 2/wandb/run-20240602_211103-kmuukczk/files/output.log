@@ -1,0 +1,30 @@
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:157: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  states = torch.tensor(states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:158: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  actions = torch.tensor(actions, device=self.device, dtype=torch.int64).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:159: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = torch.tensor(rewards, device=self.device, dtype=torch.float32).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:160: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  next_states = torch.tensor(next_states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:161: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  dones = torch.tensor(dones, device=self.device, dtype=torch.float32).unsqueeze(1)
+Episode: 1: Time: 27.580023765563965 Total Reward: -14.708029197080116 Avg_Loss: 0.7586802348826721
+saving to ./runs/DoubleDQN_HardUpdates/run3
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:317: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  states = torch.tensor(states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:318: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  actions = torch.tensor(actions, device=self.device, dtype=torch.int64).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:319: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = torch.tensor(rewards, device=self.device, dtype=torch.float32).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:320: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  next_states = torch.tensor(next_states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:321: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  dones = torch.tensor(dones, device=self.device, dtype=torch.float32).unsqueeze(1)
+/usr/local/lib/python3.10/dist-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:744: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Episode: 1: Time: 14.56235384941101 Total Reward: -70.35211267605669 Avg_Loss: 0.7455912459712879
+Episode: 2: Time: 14.924691200256348 Total Reward: -18.664122137405013 Avg_Loss: 0.7419266218335188
+saving to ./runs/DoubleDQN_HardUpdates/run4
+hi

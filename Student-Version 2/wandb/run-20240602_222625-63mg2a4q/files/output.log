@@ -1,0 +1,32 @@
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:157: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  states = torch.tensor(states).to(self.device).float()
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:158: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  actions = torch.tensor(actions).to(self.device).long()
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:159: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = torch.tensor(rewards).to(self.device).float()
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:160: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  next_states = torch.tensor(next_states).to(self.device).float()
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:161: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  dones = torch.tensor(dones).to(self.device).bool()
+saving to ./runs/DoubleDQN_SoftUpdates/run0
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:323: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  states = torch.tensor(states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:324: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  actions = torch.tensor(actions, device=self.device, dtype=torch.int64).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:325: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = torch.tensor(rewards, device=self.device, dtype=torch.float32).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:326: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  next_states = torch.tensor(next_states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:327: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  dones = torch.tensor(dones, device=self.device, dtype=torch.float32).unsqueeze(1)
+/usr/local/lib/python3.10/dist-packages/torch/nn/modules/conv.py:456: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return F.conv2d(input, weight, bias, self.stride,
+/usr/local/lib/python3.10/dist-packages/torch/autograd/graph.py:744: UserWarning: Plan failed with a cudnnException: CUDNN_BACKEND_EXECUTION_PLAN_DESCRIPTOR: cudnnFinalize Descriptor Failed cudnn_status: CUDNN_STATUS_NOT_SUPPORTED (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:919.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Episode: 1: Time: 13.466094970703125 Total Reward: -60.64885496183253 Avg_Loss: 0.8440605403179195
+Episode: 2: Time: 13.980152606964111 Total Reward: -52.031250000000576 Avg_Loss: 0.7866846288108275
+Episode: 3: Time: 13.455419063568115 Total Reward: -47.89855072463834 Avg_Loss: 0.6704405053370014
+Episode: 4: Time: 12.613476276397705 Total Reward: -26.81818181818222 Avg_Loss: 0.7675019066092097
+Episode: 5: Time: 12.5891695022583 Total Reward: -29.640522875817695 Avg_Loss: 0.7485911341211876
+saving to ./runs/DoubleDQN_SoftUpdates/run1
+hi

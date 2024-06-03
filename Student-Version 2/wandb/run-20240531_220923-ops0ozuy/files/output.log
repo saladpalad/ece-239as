@@ -1,0 +1,45 @@
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:157: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  states = torch.tensor(states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:158: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  actions = torch.tensor(actions, device=self.device, dtype=torch.int64).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:159: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  rewards = torch.tensor(rewards, device=self.device, dtype=torch.float32).unsqueeze(1)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:160: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  next_states = torch.tensor(next_states, device=self.device, dtype=torch.float32)
+/content/drive/MyDrive/ECE_2392AS_Project4_V2/Student-Version 2/DQN.py:161: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  dones = torch.tensor(dones, device=self.device, dtype=torch.float32).unsqueeze(1)
+Episode: 1: Time: 37.19332528114319 Total Reward: -55.144927536232494 Avg_Loss: 0.8919362981750327
+Episode: 2: Time: 42.93694996833801 Total Reward: -41.96969696969725 Avg_Loss: 0.9075116743529293
+Episode: 3: Time: 41.45191264152527 Total Reward: -39.44444444444515 Avg_Loss: 0.8084041670966549
+Episode: 4: Time: 39.195754528045654 Total Reward: -65.97653429602941 Avg_Loss: 0.8883431101692658
+Episode: 5: Time: 43.4003689289093 Total Reward: -82.91540785498452 Avg_Loss: 6.2359581500166605
+Episode: 6: Time: 42.04032897949219 Total Reward: -23.327645051194757 Avg_Loss: 4.803901064217467
+Episode: 7: Time: 45.09191107749939 Total Reward: -20.42372881355987 Avg_Loss: 12.617639426642857
+Episode: 8: Time: 49.106587648391724 Total Reward: -85.35369774919569 Avg_Loss: 5.960775667554973
+Episode: 9: Time: 46.42919874191284 Total Reward: 45.35087719298533 Avg_Loss: 4.75311426636802
+Episode: 10: Time: 18.738283157348633 Total Reward: -81.87288135593268 Avg_Loss: 4.02742421194309
+Episode: 11: Time: 25.767410278320312 Total Reward: -103.37102803738345 Avg_Loss: 5.752202488866354
+Episode: 12: Time: 14.333948850631714 Total Reward: -21.703883495144964 Avg_Loss: 9.773326217610803
+Episode: 13: Time: 16.334649562835693 Total Reward: -13.781690140844276 Avg_Loss: 12.133845146922837
+Episode: 14: Time: 46.15544319152832 Total Reward: -119.85405405405464 Avg_Loss: 19.881996856512206
+Episode: 15: Time: 20.356384992599487 Total Reward: -71.87801418439764 Avg_Loss: 18.170533263296992
+Episode: 16: Time: 45.5268771648407 Total Reward: -59.15770609319068 Avg_Loss: 24.40128782296068
+Episode: 17: Time: 20.462991952896118 Total Reward: -77.99743589743636 Avg_Loss: 17.637937784862686
+Episode: 18: Time: 18.864375591278076 Total Reward: -75.22893772893818 Avg_Loss: 31.750075877980983
+Episode: 19: Time: 28.72939658164978 Total Reward: -93.96293706293764 Avg_Loss: 24.6743969880826
+Episode: 20: Time: 16.04385232925415 Total Reward: -61.273426573426995 Avg_Loss: 18.79331298771946
+Episode: 21: Time: 38.33890509605408 Total Reward: -122.64326018808818 Avg_Loss: 34.18686655520008
+Episode: 22: Time: 45.54151463508606 Total Reward: -28.098591549295776 Avg_Loss: 33.316170022768134
+Episode: 23: Time: 18.855132818222046 Total Reward: -57.74695340501802 Avg_Loss: 24.137968549342908
+Episode: 24: Time: 14.92243766784668 Total Reward: -75.65000000000033 Avg_Loss: 16.011675505619497
+Episode: 25: Time: 14.00482439994812 Total Reward: 3.9798479087461516 Avg_Loss: 30.2689695046985
+Episode: 26: Time: 21.31502938270569 Total Reward: -79.0084967320266 Avg_Loss: 18.901901532073044
+Episode: 27: Time: 25.604695558547974 Total Reward: -97.23797468354473 Avg_Loss: 39.083139840677816
+Episode: 28: Time: 22.070564031600952 Total Reward: -81.6515723270445 Avg_Loss: 27.3751229100789
+Episode: 29: Time: 14.80953049659729 Total Reward: -26.232225913620766 Avg_Loss: 40.016895053478386
+Passed reset
+Passed step
+Passed
+Passed
+saving to ./runs/DQN/run12
+hi

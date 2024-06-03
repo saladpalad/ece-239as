@@ -1,0 +1,44 @@
+{
+    "os": "Linux-6.1.85+-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-05-31T01:01:56.311178",
+    "startedAt": "2024-05-31T01:01:45.702557",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "rl_V2.ipynb",
+    "codePathLocal": "rl_V2.ipynb",
+    "colab": "https://colab.research.google.com/notebook#fileId=1sPH9vcrP_tNp5qG-nIWnxHmh-dFruP2f",
+    "host": "409d682daef7",
+    "username": "root",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 1,
+    "cpu_count_logical": 2,
+    "cpu_freq": {
+        "current": 2199.998,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2199.998,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 107.71508407592773,
+            "used": 30.151165008544922
+        }
+    },
+    "memory": {
+        "total": 12.674774169921875
+    }
+}
