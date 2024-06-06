@@ -154,12 +154,6 @@ class DQN:
 
         states, actions, rewards, next_states, dones = self.replay_buffer.sample(self.batch_size)
 
-        #states = torch.tensor(states).to(self.device).float()
-        #actions = torch.tensor(actions).to(self.device).long()
-        #rewards = torch.tensor(rewards).to(self.device).float()
-        #next_states = torch.tensor(next_states).to(self.device).float()
-        #dones = torch.tensor(dones).to(self.device).bool()
-
         states = torch.tensor(states, device=self.device, dtype=torch.float32)
         actions = torch.tensor(actions, device=self.device, dtype=torch.int64).unsqueeze(1)
         rewards = torch.tensor(rewards, device=self.device, dtype=torch.float32).unsqueeze(1)
@@ -297,12 +291,11 @@ class HardUpdateDQN(DQN):
             self.env.action_space.n, **model_kwargs
         ).to(self.device)
         
-        # Synchronize the target model's weights with the online model's weights
         self.target_model.load_state_dict(self.model.state_dict())
-        self.target_model.eval()  
+        #self.target_model.train()  
 
         self.update_freq = update_freq
-        self.num_updates = 0
+        self.i_update = 0
         
         
     def _optimize_model(self):
@@ -318,7 +311,7 @@ class HardUpdateDQN(DQN):
         if(self.replay_buffer.__len__() < bz*10):
           return False, 0
 
-        states, actions, rewards, next_states, dones = self.replay_buffer.sample(self.batch_size)
+        states, actions, rewards, next_states, dones = self.replay_buffer.sample(bz)
 
         states = torch.tensor(states, device=self.device, dtype=torch.float32)
         actions = torch.tensor(actions, device=self.device, dtype=torch.int64).unsqueeze(1)
@@ -329,15 +322,17 @@ class HardUpdateDQN(DQN):
         q_values = self.model(states).gather(1, actions)
         
         with torch.no_grad():
-            next_actions = self.model(next_states).max(1)[1].unsqueeze(1)
-            # use another target model to calculate target Q value
-            target_q_values = rewards + (self.gamma * self.target_model(next_states).gather(1, next_actions) * (1 - dones))
+            # use target model to calculate next Q values
+            next_q_values = self.target_model(next_states).max(1)[0].unsqueeze(1)
+            target_q_values = rewards + (self.gamma * next_q_values * (1 - dones))
 
         loss = self.loss_fn(q_values, target_q_values)
 
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
+        
+        self._update_model()
 
         return True, loss.item()
     
@@ -365,6 +360,6 @@ class SoftUpdateDQN(HardUpdateDQN):
         #====== TODO: ======
         for target_param, model_param in zip(self.target_model.parameters(), self.model.parameters()):
             target_param.data.copy_(self.tau * model_param.data + (1.0 - self.tau) * target_param.data)
-    
+    #=
 
         
